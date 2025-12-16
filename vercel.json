@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "kwontol.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "kwontol.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
